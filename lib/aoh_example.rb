@@ -17,7 +17,7 @@ def assembled_aoh
 end
 
 def literal_aoh 
-  don_and_friends_hash = [
+  aoh = [
 {name: "Don Gately", occupation: "Live-in Staff"},
 {name: "Joelle van Dyne", occupation: "Radio Personality"},
 {name: "Pat Monteseian", occupation: "Staff"},
@@ -27,25 +27,25 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
-   don_and_friends_hash = [
+   aoh = [
 {name: "Don Gately", occupation: "Live-in Staff"},
 {name: "Joelle van Dyne", occupation: "Radio Personality"},
 {name: "Pat Monteseian", occupation: "Staff"},
 {name: "Kate Gompert", occupation: "None"},
 {name: "Bruce Green", occupation: "Fan of Mildred"}
 ]
-don_and_friends_hash[2][:name]
+aoh[2][:name]
 end
 
 def aoh_update(aoh, row, key, new_value)
- don_and_friends_hash = [
+ aoh = [
 {name: "Don Gately", occupation: "Live-in Staff"},
 {name: "Joelle van Dyne", occupation: "Radio Personality"},
 {name: "Pat Monteseian", occupation: "Staff"},
 {name: "Kate Gompert", occupation: "None"},
 {name: "Bruce Green", occupation: "Fan of Mildred"}
 ]
-don_and_friends_hash[1][:name] = "Joelle van Dyne (PGOAT)"
+aoh[1][:name] = "Joelle van Dyne (PGOAT)"
 end
 
  # Update the AoH data at row and key to have the value of new_value
