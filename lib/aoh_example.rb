@@ -36,6 +36,7 @@ def aoh_lookup(aoh, row, key)
 ]
 don_and_friends_hash[2][:name]
 end
+
 def aoh_update(aoh, row, key, new_value)
  don_and_friends_hash = [
 {name: "Don Gately", occupation: "Live-in Staff"},
